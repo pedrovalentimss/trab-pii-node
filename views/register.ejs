@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <%- include('head'); %>
+</head>
+<body>
+    <header>
+        <%- include('menu'); %>
+    </header>
+    <div class="container mt-3">
+    <h2>Cadastrar quadra</h2>
+    <form action="/register" method="POST" class="row g-3">
+        <div class="col-md-6">
+            <label for="name" class="form-label">Nome da quadra</label>
+            <input type="text" class="form-control" id="name" name="name">
+          </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Telefone</label>
+          <input type="text" class="form-control" id="phone" name="phone">
+        </div>
+        <div class="col-12 mt-2">
+            <label for="sports" class="form-label">Esportes</label>
+            <input type="text" class="form-control" id="sports" name="sports" placeholder="Futsal, basquete, tênis, ...">
+          </div>
+        <div class="col-6 mt-2">
+          <label for="address" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="address" name="address" placeholder="Av. Principal, 123">
+        </div>
+        <div class="col-md-4 mt-2">
+            <label for="zip" class="form-label">CEP</label>
+            <input type="text" class="form-control" id="zip" name="zip">
+          </div>
+        <div class="col-md-6 mt-2">
+          <label for="city" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="city" name="city">
+        </div>
+        <div class="col-md-6 mt-2">
+            <label for="state" class="form-label">Estado</label>
+            <input type="text" class="form-control" id="state" name="state">
+          </div>
+        <div class="col-12 mt-3">
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
